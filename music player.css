@@ -13,26 +13,26 @@ body {
 .image,
 .artist {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 50px;
     font-style: italic;
     font-weight: bold;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .songname {
-    font-size: 50px;
+    font-size: 70px;
     animation-name: fade;
     animation-duration: 6s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-delay: 3s;
     z-index: -8;
-    height: 40px;
+    height: 60px;
 }
 
 .slide {
     overflow: hidden;
-    width: 40vw;
+    width:50%;
     height:auto;
     margin: auto;
 }
@@ -42,9 +42,7 @@ body {
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
-    font-size: 20px;
-
-
+    font-size: 30px;
 }
 
 .buttons i:hover {
@@ -53,9 +51,9 @@ body {
 }
 
 .buttons i {
-    font-size: 60px;
+    font-size: 80px;
     cursor: pointer;
-    padding: 0px 20px;
+    margin: 30px;
 }
 
 .slider-contents input {
@@ -90,9 +88,10 @@ body {
     margin-top:30px;
 }
 .volume{
-    font-size: 20px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
+    margin: 50px 0px;
 }
 .volume input{
     width: 400px;
