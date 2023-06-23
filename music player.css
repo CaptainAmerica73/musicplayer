@@ -5,9 +5,10 @@ body {
 
 .player {
     text-align: center;
-    margin-top: 50px;
 }
-
+.playlist{
+    margin-top:30px;
+}
 .playlist,
 .songname,
 .image,
@@ -26,8 +27,8 @@ body {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-delay: 3s;
-    z-index: -8;
     height: 60px;
+    width:50%;
 }
 
 .slide {
@@ -50,7 +51,7 @@ body {
 
 }
 
-.buttons i {
+.buttons i{
     font-size: 80px;
     cursor: pointer;
     margin: 30px;
