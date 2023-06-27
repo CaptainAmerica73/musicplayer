@@ -5,38 +5,38 @@
     <title>
         Music Player
     </title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="music player.css">
+    <script src="https://kit.fontawesome.com/b97ee5b87d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="player">
         <div class="contents">
             <div class="playlist">Playlist</div>
-            <div class="image"><img
-                    src="https://play-lh.googleusercontent.com/_Xn1KBG-zJo0zGtQglSrhqut3DOHk_vaFxSePNGxrw_F6Z5ZP2KMF-MsdjeqrlJgPBKL=w240-h480-rw">
-            </div>
+            <div class="image"><img src="https://www.pixelstalk.net/wp-content/uploads/2016/09/High-Definition-Music-Photos.jpg" 
+                class="track-art" width="600px" height="600px"></div>
             <div class="slide"><div class="songname">Song Name</div></div>
             <div class="artist">Artist</div>
         </div>
         <div class="buttons">
-            <div class="previous"><i class="material-icons">skip_previous</i></div>
-            <div class="pauseplay"><i class="material-icons">pause_circle</i></div>
-            <div class="next"><i class="material-icons">skip_next</i></div>
+            <div class="previous" onclick="previous_track()"><i class="fa-solid fa-backward-step"></i></div>
+            <div class="pauseplay" onclick="playpause_track()"><i class="fa-solid fa-circle-play"></i></div>
+            <div class="next" onclick="next_track()"><i class="fa-solid fa-forward-step"></i></div>
         </div>
         <div class="slider-contents">
             <div class="current-time">00:00</div>
-            <input type="range" min="0" max="100" value="30" class="slider-position">
+            <input type="range" min="0" max="100" value="30" class="slider-position" onchange="slider_change()">
             <div class="total-time">00:00</div>
         </div>
-        <div class="volume">0
-            <div class="volumeslider"><input type="range" min="1" max="100" value="20"></div>100
+        <div class="volume">
+            <div class="volumechange"></div>
+            <input type="range" class="volumeslider" min="0" max="100" value="100" onchange="set_volume()">
+            <div class="maxvolume">100</div>
         </div>
     </div>
-    <script>
-
-    </script>
+    <script src="music player.js"></script>
 </body>
 
 </html>
