@@ -11,7 +11,6 @@ body {
 }
 .playlist,
 .songname,
-.image,
 .artist {
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
@@ -28,6 +27,7 @@ body {
     animation-iteration-count: infinite;
     animation-delay: 3s;
     height: 60px;
+    margin-top: 20px;
 }
 
 .slide {
@@ -95,4 +95,20 @@ body {
 }
 .volume input{
     width: 400px;
+}
+.track-art{
+    border-radius:50%;
+    animation-name:example;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: scale(0deg);
+}
+@keyframes example {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
 }
