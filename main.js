@@ -23,7 +23,7 @@ let song_list = [
         name: "Chellamma Chellamma",
         artist: "Anirudh Ravichandran,Jonita Gandhi",
         img: "https://pbs.twimg.com/media/FCTABPtVkAYAQnf.jpg:large",
-        path: "Chellamma-MassTamilan.fm.mp3"
+        path: "https://github.com/CaptainAmerica73/musicplayer/blob/main/Dopamine%20Addict.mp3"
     },
     {
         name: "Samajavaragamana",
@@ -35,7 +35,7 @@ let song_list = [
         name: "Dopamine Addict",
         artist: "Alec Benjamin",
         img: "https://i.ytimg.com/vi/4LJQ8Ui_8_w/maxresdefault.jpg",
-        path: "Dopamine Addict.mp3"
+        path: "https://github.com/CaptainAmerica73/musicplayer/blob/main/Dopamine%20Addict.mp3"
     },
     {
         name: "Unakkul Naanae",
