@@ -26,31 +26,31 @@ let song_list = [
         name: "Chellamma Chellamma",
         artist: "Anirudh Ravichandran,Jonita Gandhi",
         img: "https://pbs.twimg.com/media/FCTABPtVkAYAQnf.jpg:large",
-        path: "https://github.com/CaptainAmerica73/musicplayer/blob/main/Chellamma-MassTamilan.fm.mp3"
+        path: ""
     },
     {
         name: "Samajavaragamana",
         artist: "S Thaman,Sid Sriram",
         img: "https://wallpapercave.com/dwp1x/wp6123059.jpg  ",
-        path: "Samajavaragamana---Male-MassTamilan.io.mp3"
+        path: ""
     },
     {
         name: "Dopamine Addict",
         artist: "Alec Benjamin",
         img: "https://i.ytimg.com/vi/4LJQ8Ui_8_w/maxresdefault.jpg",
-        path: "https://github.com/CaptainAmerica73/musicplayer/blob/main/Dopamine%20Addict.mp3"
+        path: ""
     },
     {
         name: "Unakkul Naanae",
         artist: "Pritt",
         img: "https://i1.sndcdn.com/artworks-zOSOFzy6DOaeAD5A-LrwtUw-t500x500.png",
-        path: "Unakkul Naanae.mp3"
+        path: ""
     },
     {
         name: "Tum Hi Ho",
         artist: "Arijit Singh",
         img: "https://wallpapercave.com/wp/wp7717914.jpg",
-        path: "Tum Hi Ho.mp3"
+        path: ""
     }
 ];
 
