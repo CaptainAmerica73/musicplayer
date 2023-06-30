@@ -1,3 +1,6 @@
+$(document).ready(function(){
+    alert("hi");}
+
 let playlist_name = document.querySelector(".playlist");
 let song_image = document.querySelector(".track-art");
 let song_name = document.querySelector(".songname");
