@@ -41,7 +41,7 @@ let song_list = [
         name: "Unakkul Naanae",
         artist: "Pritt",
         img: "https://i1.sndcdn.com/artworks-zOSOFzy6DOaeAD5A-LrwtUw-t500x500.png",
-        path: "songs/Unakkul Naanae.mp3"
+        path: "https://github.com/CaptainAmerica73/musicplayer/raw/main/songs/Unakkul%20Naanae.mp3"
     },
     {
         name: "Tum Hi Ho",
