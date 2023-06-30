@@ -1,6 +1,3 @@
-$(document).ready(function(){
-    alert("hi");}
-
 let playlist_name = document.querySelector(".playlist");
 let song_image = document.querySelector(".track-art");
 let song_name = document.querySelector(".songname");
@@ -150,7 +147,4 @@ function slider_update() {
         time_slider.value = slider_position;
     }
 }
-load_track(track_index);let playlist_name=document.querySelector(".playlist");
-let song_name=document.querySelector(".songname");
-let artist_name=document.querySelector(".artist");
-let 
+load_track(track_index);
