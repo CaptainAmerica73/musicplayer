@@ -54,6 +54,7 @@ body {
     font-size: 80px;
     cursor: pointer;
     margin: 30px;
+    transform: scale(1);
 }
 
 .slider-contents input {
