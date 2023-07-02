@@ -29,8 +29,7 @@ let song_list = [
         name: "Samajavaragamana",
         artist: "S Thaman,Sid Sriram",
         img: "https://wallpapercave.com/dwp1x/wp6123059.jpg  ",
-        path: "songs/Samajavaragamana---Male-MassTamilan.io.mp3
-"
+        path: "songs/Samajavaragamana---Male-MassTamilan.io.mp3"
     },
     {
         name: "Dopamine Addict",
