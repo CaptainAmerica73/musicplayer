@@ -48,6 +48,24 @@ let song_list = [
         artist: "Arijit Singh",
         img: "https://wallpapercave.com/wp/wp7717914.jpg",
         path: "songs/Tum Hi Ho.mp3"
+    },
+    {
+        name: "Paadatha Pattellam",
+        artist: "Viswanathan-Ramamoorthy,Dharan Kumar,Sathyaprakash,Nithyashree,Emcee D",
+        img: "https://pagalnew.com/coverimages/paadatha-pattellam-rudhran-500-500.jpg",
+        path:""
+    },
+    {
+        name: "Kaattumalli",
+        artist: "Ilaiyaraaja,Ananya Bhat",
+        img: "https://c.saavncdn.com/615/Kaattumalli-Trending-Version-Tamil-2023-20230424193336-500x500.jpg",
+        path: ""
+    },
+    {
+        name: "Ennodu Nee Irundhal",
+        artist: "A.R.Rahman,Sid Sriram,Sunitha Sarathy",
+        img: "https://i1.sndcdn.com/artworks-000092468035-uzbm3k-t500x500.jpg",
+        path: ""
     }
 ];
 
