@@ -23,7 +23,7 @@ let song_list = [
         name: "Chellamma Chellamma",
         artist: "Anirudh Ravichandran,Jonita Gandhi",
         img: "https://pbs.twimg.com/media/FCTABPtVkAYAQnf.jpg:large",
-        path: "https://github.com/CaptainAmerica73/musicplayer/blob/main/songs/Chellamma-MassTamilan.fm.mp3"
+        path: "songs/Chellamma-MassTamilan.fm.mp3"
     },
     {
         name: "Samajavaragamana",
@@ -41,7 +41,7 @@ let song_list = [
         name: "Unakkul Naanae",
         artist: "Pritt",
         img: "https://i1.sndcdn.com/artworks-zOSOFzy6DOaeAD5A-LrwtUw-t500x500.png",
-        path: "https://github.com/CaptainAmerica73/musicplayer/raw/main/songs/Unakkul%20Naanae.mp3"
+        path: "songs/Unakkul%20Naanae.mp3"
     },
     {
         name: "Tum Hi Ho",
