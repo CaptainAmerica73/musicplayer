@@ -23,7 +23,7 @@ let song_list = [
         name: "Chellamma Chellamma",
         artist: "Anirudh Ravichandran,Jonita Gandhi",
         img: "https://pbs.twimg.com/media/FCTABPtVkAYAQnf.jpg:large",
-        path: "tree/songs/songs/Chellamma-MassTamilan.fm.mp3"
+        path: "musicplayer/blob/songs/songs/Chellamma-MassTamilan.fm.mp3"
     },
     {
         name: "Samajavaragamana",
