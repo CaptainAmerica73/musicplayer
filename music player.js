@@ -11,6 +11,8 @@ let total_time = document.querySelector(".total-time");
 let volume_change = document.querySelector(".volumechange");
 let volume_slider = document.querySelector(".volumeslider");
 let max_volume = document.querySelector(".maxvolume");
+let loop=document.querySelector(".loop");
+let shuffle=document.querySelector(".shuffle");
 
 let track_index = 0;
 let is_playing = false;
@@ -319,15 +321,18 @@ function pause_track() {
     pauseplay_button.innerHTML = "<i class='fa-solid fa-circle-play'></i>";
 }
 
-let a = 0;
+let image = 0;
 function next_track() {
     if (track_index < song_list.length - 1) track_index += 1;
     else track_index = 0;
 
     document.querySelector(".track-art").style.animationName = "none";
-    a++;
-    if (a % 2 == 0) document.querySelector(".track-art").style.animationName = "example";
-    else document.querySelector(".track-art").style.animationName = "rotate";
+    if (image == 1) {
+        document.querySelector(".track-art").style.animationName = "rotate1";
+        image--;}
+    else {
+        document.querySelector(".track-art").style.animationName = "rotate2";
+        image++;}
 
     load_track(track_index);
     play_track();
@@ -338,11 +343,46 @@ function previous_track() {
     else track_index = song_list.length - 1;
 
     document.querySelector(".track-art").style.animationName = "none";
-    a++;
-    if (a % 2 == 0) document.querySelector(".track-art").style.animationName = "rotate1";
-    else document.querySelector(".track-art").style.animationName = "rotate2";
+    
+    if (image == 1) {
+        document.querySelector(".track-art").style.animationName = "rotate1";
+        image--;}
+    else {
+        document.querySelector(".track-art").style.animationName = "rotate2";
+        image++;}
+
     load_track(track_index);
     play_track();
+}
+
+let is_looping=false;
+function looping(){
+    if(is_looping==false){
+        is_looping=true;
+        current_track.loop=true;
+        loop.style.color="blue"}
+    else{
+        is_looping=false;
+        current_track.loop=false;
+        loop.style.color="white"}
+}
+
+let is_shuffling=false;
+function shuffling(){
+    if(is_shuffling==false){
+        current_track.addEventListener("ended",function(){
+            track_index=Math.floor(Math.random()*(song_list.length-1));
+            load_track(track_index);
+            play_track();
+        })
+        is_shuffling=true;
+        shuffle.style.color="blue";
+    }
+    else{
+        current_track.addEventListener("ended",next_track);
+        is_shuffling=false;
+        shuffle.style.color="white";
+    }
 }
 
 function slider_change() {
