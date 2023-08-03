@@ -44,9 +44,12 @@ body {
     padding-bottom: 20px;
     font-size: 30px;
 }
+.buttons i:hover{
+    transform:scale(1.3);
+}
 
-.buttons i:hover {
-    transform: scale(1.3);
+.buttons i:checked {
+    transform: scale(1);
 }
 
 .buttons i{
