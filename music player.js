@@ -280,6 +280,7 @@ function load_track(track_index) {
     random_color();
 
 }
+
 function random_color() {
     let red = Math.floor(Math.random() * 255);
     let green = Math.floor(Math.random() * 255);
@@ -295,27 +296,31 @@ function random_color() {
 
     document.body.style.background  = "linear-gradient(to right," + bg_colour1 + "," + bg_colour2 + ")";
 }
+
 function reset_values() {
     current_time.textContent = "00:00";
     total_time.textContent = "00:00";
     time_slider.value = 0;
 }
+
 function playpause_track() {
     is_playing ? pause_track() : play_track();
 }
+
 function play_track() {
     current_track.play();
     is_playing = true;
     pauseplay_button.innerHTML = "<i class='fa-solid fa-circle-pause'></i>";
 }
+
 function pause_track() {
     current_track.pause();
     is_playing = false;
     pauseplay_button.innerHTML = "<i class='fa-solid fa-circle-play'></i>";
 }
+
 let a = 0;
 function next_track() {
-    next_button.innerHTML="<i class='fa-solid fa-forward-step'></i>";
     if (track_index < song_list.length - 1) track_index += 1;
     else track_index = 0;
 
@@ -329,26 +334,36 @@ function next_track() {
 }
 
 function previous_track() {
-    previous_button.innerHTML="<i class='fa-solid fa-backward-step'></i>";
     if (track_index > 0) track_index -= 1;
     else track_index = song_list.length - 1;
 
     document.querySelector(".track-art").style.animationName = "none";
     a++;
-    if (a % 2 == 0) document.querySelector(".track-art").style.animationName = "example";
-    else document.querySelector(".track-art").style.animationName = "rotate";
+    if (a % 2 == 0) document.querySelector(".track-art").style.animationName = "rotate1";
+    else document.querySelector(".track-art").style.animationName = "rotate2";
     load_track(track_index);
     play_track();
 }
+
+function touch_end1(){
+    previous_button.style.transform="scale(1)";
+}
+
+function touch_end2(){
+    next_button.style.transform="scale(1)";
+}
+
 function slider_change() {
     let song_duration = current_track.duration * (time_slider.value / 100);
     current_track.currentTime = song_duration;
 }
+
 function set_volume() {
     volume_change.innerHTML=volume_slider.value; 
     current_track.volume = volume_slider.value / 100;
     console.log(volume_slider.value); 
 }
+
 function slider_update() {
     let slider_position = 0;
     if (!isNaN(current_track.duration)) {
@@ -360,4 +375,5 @@ function slider_update() {
         time_slider.value = slider_position;
     }
 }
+
 load_track(track_index);
