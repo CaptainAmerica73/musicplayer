@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>
         Music Player
     </title>
     <link rel="stylesheet" href="music player.css">
     <script src="https://kit.fontawesome.com/b97ee5b87d.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2402/2402443.png ">
+    <link rel="icon" type="image/x-icon" href="music.png">
 </head>
 <body>
     <div class="player">
@@ -18,9 +19,9 @@
             <div class="artist">Artist</div>
         </div>
         <div class="buttons">
-            <div class="previous" onclick="previous_track()"><i class="fa-solid fa-backward-step"></i></div>
+            <div class="previous" ontouchend="touch_end1()" onclick="previous_track()"><i class="fa-solid fa-backward-step"></i></div>
             <div class="pauseplay" onclick="playpause_track()"><i class="fa-solid fa-circle-play"></i></div>
-            <div class="next" onclick="next_track()"><i class="fa-solid fa-forward-step"></i></div>
+            <div class="next" ontouchend="touch_end2()" onclick="next_track()"><i class="fa-solid fa-forward-step"></i></div>
         </div>
         <div class="slider-contents">
             <div class="current-time">00:00</div>
@@ -35,4 +36,5 @@
     </div>
     <script src="music player.js" type="text/javascript"></script>
 </body>
+
 </html>
