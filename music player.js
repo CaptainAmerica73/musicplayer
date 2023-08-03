@@ -315,6 +315,7 @@ function pause_track() {
 }
 let a = 0;
 function next_track() {
+    next_button.innerHTML="<i class='fa-solid fa-forward-step'></i>";
     if (track_index < song_list.length - 1) track_index += 1;
     else track_index = 0;
 
@@ -328,6 +329,7 @@ function next_track() {
 }
 
 function previous_track() {
+    previous_button.innerHTML="<i class='fa-solid fa-backward-step'></i>";
     if (track_index > 0) track_index -= 1;
     else track_index = song_list.length - 1;
 
