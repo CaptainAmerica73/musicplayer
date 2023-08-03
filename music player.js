@@ -345,14 +345,6 @@ function previous_track() {
     play_track();
 }
 
-function touch_end1(){
-    previous_button.style.transform="scale(1)";
-}
-
-function touch_end2(){
-    next_button.style.transform="scale(1)";
-}
-
 function slider_change() {
     let song_duration = current_track.duration * (time_slider.value / 100);
     current_track.currentTime = song_duration;
