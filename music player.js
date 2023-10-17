@@ -393,7 +393,6 @@ function slider_change() {
 function set_volume() {
     volume_change.innerHTML=volume_slider.value; 
     current_track.volume = volume_slider.value / 100;
-    console.log(volume_slider.value); 
 }
 
 function slider_update() {
