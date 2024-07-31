@@ -11,7 +11,11 @@ Progress Bar: Shows the progress of the current track.
 Track Information: Displays the name of the current track.
 Responsive Design: Adapts to different screen sizes.
 
-Screenshots
+Screenshots:
+![1000039764](https://github.com/user-attachments/assets/da6781ff-dcc2-4f13-96f9-2e6715cc3e20)
+
+
+![1000039766](https://github.com/user-attachments/assets/ccf07305-bf16-4ea4-9e0e-75b2e388fe8b)
 
 
 Enjoy the music! 🎶
